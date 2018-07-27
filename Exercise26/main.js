@@ -9,3 +9,4 @@ function add_more(str) {
 }
 console.log(add_more('abcd'));
 console.log(add_more('ab'));
+console.log(add_more(''));
