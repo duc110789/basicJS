@@ -1,17 +1,12 @@
-function check_str(str) {
-    if (str.length < 4) {
-        return false;
+function check_str(a,b) {
+    if ((a >= 55 && a <= 99) || (b >= 55 && b <= 99)) {
+        return true;
     }
     else {
-        if(str.substring(0,4) === 'Java') {
-            return true;
-        }
-        else {
-            return false;
-        }
+        return false;
     }
 }
-console.log(check_str('Javascript'));
-console.log(check_str('abJava'));
-console.log(check_str('abcd'));
-console.log(check_str('ab'));
+console.log(check_str(4, 6));
+console.log(check_str(4, 60));
+console.log(check_str(99, 60));
+console.log(check_str(99, 6));
