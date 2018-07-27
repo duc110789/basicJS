@@ -1,12 +1,17 @@
-function check_str(a,b,c) {
-    if ((a >= 55 && a <= 99) || (b >= 55 && b <= 99) || (c >= 55 && c <= 99)) {
-        return true;
+function check_str(str) {
+    if (str.length >= 6) {
+        let result_str = str;
+        if (str.substring(10, 4) === 'Script') {
+            return result_str = str.substring(0, 4) + str.substring(10, str.lenght);
+        }
+        else {
+            return str;
+        }
     }
     else {
-        return false;
+        return str;
     }
 }
-console.log(check_str(4, 6, 6));
-console.log(check_str(4, 60, 7));
-console.log(check_str(99, 60));
-console.log(check_str(99, 6));
+console.log(check_str('TypeScript'));
+console.log(check_str('JavaScript'));
+console.log(check_str('CoffeeScripts'));
