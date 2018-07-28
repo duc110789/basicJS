@@ -1,6 +1,6 @@
 function numb_check(a) {
     if (Number.isInteger(a)) {
-        if ((a >= 40 && a <= 60) || (a >= 70 && a <= 100)) {
+        if ((a >=40 && a <= 60) || (a >= 70 && a <= 100)) {
             return true;
         }
         else {
